@@ -1,0 +1,44 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+legend {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+}
+
+.area_blu {
+    background-color: lightblue;
+    width: 250px;
+    height: 30px;
+}
+
+fieldset{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.area_blu p {
+    margin: 0;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+select {
+    height: 30px;
+    width: 100px;
+}
+
+textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+}

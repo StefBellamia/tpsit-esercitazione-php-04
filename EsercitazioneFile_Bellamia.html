@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitazione Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <br>
+    <form action="calcola.php" method="post">
+        <fieldset>
+            <legend>
+                <strong><i><u>Inserimento Auto</u></i></strong> 
+            </legend>
+
+            <br>
+
+            <table>
+                <tr>
+                    <td class="area_blu"><p>Marca</p></td>
+                    <td>
+                        <select name="marca" id="macchina">
+                            <option value="Alfa Romeo">Alfa Romeo</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Audi">Audi</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="Porsche">Porche</option>
+                            <option value="Ferrari">Ferrari</option>                        
+                        </select>
+                    </td>
+                </tr> 
+
+                <tr>
+                    <td class="area_blu"><p>Modello</p></td>
+                    <td>
+                        <input type="text" name="modello" style="width: 200px; height: 20px;" required>
+                    </td>
+                </tr> 
+
+                <tr>
+                    <td class="area_blu"><p>Stato</p></td>
+                    <td>
+                        <input type="radio" name="stato" value="Nuova" id="nuova" checked>
+                        <label for="nuova">Nuova</label>
+
+                        <input type="radio" name="stato" value="Usata" id="usata" >
+                        <label for="usata">Usata</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="area_blu"><p>Anno Costruzione</p></td>
+                    <td>
+                        <select name="anno" id="anno" required>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="area_blu"><p>Cilindrata</p></td>
+                    <td>
+                        <input type="number" name="cilindrata" style="width: 200px; height: 20px;" min="0" required>
+                    </td>
+                </tr> 
+
+                <tr>
+                    <td class="area_blu"><p>Cavalli</p></td>
+                    <td>
+                        <input type="number" name="cavalli" style="width: 200px; height: 20px;" min="0" required>
+                    </td>
+                </tr> 
+
+                <tr>
+                    <td class="area_blu"><p>Prezzo</p></td>
+                    <td>
+                        <input type="number" name="prezzo" style="width: 200px; height: 20px;" min="0" required> Euro
+                    </td>
+                </tr> 
+
+                <tr>
+                    <td class="area_blu"><p>Targa</p></td>
+                    <td>
+                        <input type="text" name="targa" style="width: 200px; height: 20px;" required>
+                    </td>
+                </tr> 
+
+                <tr>
+                    <td class="area_blu"><p>Accessori</p></td>
+                    <td>
+                        <input type="checkbox" name="accessori[]" id="aria_condizionata" value="Aria Condizionata" >
+                        <label for="aria_condizionata">Aria Condizionata</label>
+                        <br>
+                        <input type="checkbox" name="accessori[]" id="vernice_metallizzata" value="Vernice Metallizzata">
+                        <label for="vernice_metallizzata">Vernice Metallizzata</label>
+                        <br>
+                        <input type="checkbox" name="accessori[]" id="tetto_in_cristallo" value="Tetto in Cristallo">
+                        <label for="tetto_in_cristallo">Tetto in Cristallo</label>
+                        <br>
+                        <input type="checkbox" name="accessori[]" id="impianto_radio" value="Impianto Radio-CD">
+                        <label for="impianto_radio">Impianto Radio-CD</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="area_blu"><p>Descrizione Aggiuntiva</p></td>
+                    <td>
+                        <textarea name="descrizione_aggiuntiva" rows="9" cols="26" > </textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <br> <br>
+
+            <button type="submit">Invia</button>
+            <button type="reset">Cancella</button>
+
+            <br> <br>
+
+        </fieldset>
+    </form>
+</body>
+</html>
